@@ -9,7 +9,7 @@
 	{ "s": "LENTH", "p": [33] },
 	{ "s": "LINE", "p": [35, 23] },
 	{ "s": "LINGALA", "p": [5] },
-	{ "s": "LIST", "p": [37, 38, 35, 33] },
+	{ "s": "LIST", "p": [37, 35, 33] },
 	{ "s": "LIST().EACH", "p": [37] },
 	{ "s": "LISTDATASETS", "p": [43] },
 	{ "s": "LISTDATASETS('SRC2", "p": [43] },

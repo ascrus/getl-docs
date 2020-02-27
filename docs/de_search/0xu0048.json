@@ -17,7 +17,7 @@
 	{ "s": "HH:MM:SS.SSS", "p": [35] },
 	{ "s": "HIERARCHY", "p": [37] },
 	{ "s": "HINT", "p": [33] },
-	{ "s": "HISTORY", "p": [29, 38] },
+	{ "s": "HISTORY", "p": [29] },
 	{ "s": "HISTORY1", "p": [43] },
 	{ "s": "HISTORYPOINT", "p": [29, 43, 26] },
 	{ "s": "HISTORYPOINT('DWH:HISTORY", "p": [29] },

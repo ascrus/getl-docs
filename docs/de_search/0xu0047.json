@@ -24,9 +24,7 @@
 	{ "s": "GROOVY.TRANSFORM.INHERITCONSTRUCTORS", "p": [24] },
 	{ "s": "GROOVY.UTIL.XMLPARSER", "p": [3] },
 	{ "s": "GROOVYTESTCASE", "p": [24] },
-	{ "s": "GROUP", "p": [22, 38] },
-	{ "s": "GROUPING", "p": [38] },
-	{ "s": "GROUPS", "p": [38] },
+	{ "s": "GROUP", "p": [22] },
 	{ "s": "GROVYY", "p": [20] },
 	{ "s": "GZ", "p": [27, 35, 28, 5] },
 	{ "s": "GZIP", "p": [33] }

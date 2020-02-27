@@ -1,6 +1,5 @@
 [
 	{ "s": "UNDER", "p": [37] },
-	{ "s": "UNIFORM", "p": [38] },
 	{ "s": "UNIX", "p": [27] },
 	{ "s": "UNLOAD", "p": [27] },
 	{ "s": "UNREGISTERCONNECTION", "p": [43] },
@@ -19,7 +18,6 @@
 	{ "s": "USECONNECTION", "p": [33, 34, 42, 35, 32, 29] },
 	{ "s": "USECSVCONNECTION", "p": [27] },
 	{ "s": "USECSVTEMPCONNECTION", "p": [27] },
-	{ "s": "USED", "p": [38] },
 	{ "s": "USEDB2CONNECTION", "p": [27] },
 	{ "s": "USEDESTINATIONPATH", "p": [38] },
 	{ "s": "USEEMBEDDEDCONNECTION", "p": [27] },

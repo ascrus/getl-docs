@@ -405,8 +405,10 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">&#160; truncate(truncate: true)</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">&#160; assert countRow() == 0</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">}</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Table options</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">When describing table parameters, you can specify options for creating, reading, writing, and bulk loading:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_722558AF5B"><strong>Параметры Таблицы</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">При описании параметров таблицы вы можете указать параметры для создания, чтения, записи и массовой загрузки:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">def vertable = verticaTable {</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">&#160; useConnection verticaConnection {</span></div>
@@ -452,7 +454,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_722558AF5B"><strong>Массовая загрузка файлов в таблицу (Bulk load)</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для DBMS H2 базы данных, Hadoop Hive и Microfocus Vertica, поддерживается batch загрузка из файлов CSV в таблицу.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для DBMS H2 базы данных, Hadoop Hive и Micro focus Vertica, поддерживается batch загрузка из файлов CSV в таблицу.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для этого нужно вызвать команду «bulkLoadCsv», передав ей параметр «csv» объекта, который задает имя файла, его параметры парсинга и указывает путь к хранилищу файлов в соединении. Если вместо одного файла нужно загрузить несколько по маске или списку файлов, следует использовать опцию &quot;files&quot; option:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">def csv = csv {</span></div>
