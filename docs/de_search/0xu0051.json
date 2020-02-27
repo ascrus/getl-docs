@@ -1,13 +1,13 @@
 [
-	{ "s": "QRYFACT", "p": [35] },
-	{ "s": "QUERY", "p": [35, 29, 34] },
-	{ "s": "QUERYPARAMS", "p": [35, 29] },
-	{ "s": "QUERYPARAMS.FACT_DATE", "p": [35] },
-	{ "s": "QUERYPARAMS.MAX_VALUE", "p": [35] },
-	{ "s": "QUERYPARAMS.MIN_VALUE", "p": [35] },
-	{ "s": "QUOTATION", "p": [36] },
-	{ "s": "QUOTE", "p": [36] },
-	{ "s": "QUOTEMODE", "p": [36] },
-	{ "s": "QUOTENORMAL", "p": [36] },
-	{ "s": "QUOTESTR", "p": [36] }
+	{ "s": "QRYFACT", "p": [34] },
+	{ "s": "QUERY", "p": [34, 28, 33] },
+	{ "s": "QUERYPARAMS", "p": [34, 28] },
+	{ "s": "QUERYPARAMS.FACT_DATE", "p": [34] },
+	{ "s": "QUERYPARAMS.MAX_VALUE", "p": [34] },
+	{ "s": "QUERYPARAMS.MIN_VALUE", "p": [34] },
+	{ "s": "QUOTATION", "p": [35] },
+	{ "s": "QUOTE", "p": [35] },
+	{ "s": "QUOTEMODE", "p": [35] },
+	{ "s": "QUOTENORMAL", "p": [35] },
+	{ "s": "QUOTESTR", "p": [35] }
 ]

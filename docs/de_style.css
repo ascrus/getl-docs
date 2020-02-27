@@ -154,12 +154,6 @@ span.de_722558AF5B
 {
 	font-size: 13pt;
 }
-span.de_72D496B153
-{
-	font-family: "Courier New";
-	font-size: 12pt;
-	color:#808000;
-}
 span.de_823826CA2C
 {
 	font-style:italic;
@@ -175,28 +169,21 @@ span.de_B661273025
 	font-family: "Consolas";
 	color:#008000;
 }
-span.de_C4C490465F
-{
-	font-family: "Courier New";
-	font-size: 12pt;
-	color:#000043;
-}
 span.de_CBF33CA685
 {
 	font-family: "Consolas";
 	font-size: 11pt;
 	color:#000000;
 }
-span.de_D68646C8A7
-{
-	font-family: "Courier New";
-	font-size: 12pt;
-	color:#000000;
-}
 span.de_D871B0E4A4
 {
 	font-family: "Consolas";
 	font-size: 11pt;
+	color:#000000;
+	font-style:italic;
+}
+span.de_DBF328B893
+{
 	color:#000000;
 	font-style:italic;
 }
@@ -511,6 +498,42 @@ span.de_FFB638AC42
 	counter-increment: list-counter-15;
 }
 .list-counter-15 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-16 > div > * {
+	text-indent: 0px;}
+.list-counter-16 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-16, disc) '\00a0';
+	counter-increment: list-counter-16;
+}
+.list-counter-16 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-17 > div > * {
+	text-indent: 0px;}
+.list-counter-17 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-17, disc) '\00a0';
+	counter-increment: list-counter-17;
+}
+.list-counter-17 > div > div[class='list-marker-chm'] {
 	display: inline-block;
 	text-align: left;
 	zoom: 1;
