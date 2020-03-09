@@ -339,37 +339,37 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Доступ к объектам набора данных происходит по их имени в репозитории. Без указания имени создаются локальные объекты.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для описания точки загрузки используют оператор регистрации в репозитории. Пример регистрации точки загрузки в СУБД Vertica с хранением данных в таблице public.history_points.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0">historypoint(</span><span class="de_428DFDB72B"><strong>'dwh:history'</strong></span><span class="de_AF75A8CDA0">, </span><span class="de_5643B60653"><strong>true</strong></span><span class="de_AF75A8CDA0">) <strong>{</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>&#160; &#160; </strong>useConnection verticaConnection(</span><span class="de_428DFDB72B"><strong>'dwh:con'</strong></span><span class="de_AF75A8CDA0">)</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0">&#160; &#160; schemaName = 'public'</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0">&#160; &#160; tableName = </span><span class="de_428DFDB72B"><strong>'history_points'</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_428DFDB72B"><strong>&#160; &#160; </strong></span><span class="de_AF75A8CDA0">saveMethod = </span><span class="de_480A4D64CB"><strong>insertSave</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_480A4D64CB"><strong>&#160; &#160; </strong></span><span class="de_AF75A8CDA0">create </span><span class="de_5643B60653"><strong>true</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>}</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">historypoint('dwh:history', true) {</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; useConnection verticaConnection('dwh:con')</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; schemaName = 'public'</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; tableName = 'history_points'</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; saveMethod = insertSave</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; create true</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В параметре &quot;saveMethod&quot; указывается способ обновления новой информации по таблице. Для OLTP СУБД наиболее эффективным является метод &quot;mergeSave&quot;, который вызыввает UPDATE при обновлении данных точки загрузки для выгружаемой таблицы. Для Vertica более эффективным является метод &quot;insertSave&quot;, который ведет для точки загрузки историю всех изменений, добавляя новые записи и выбирая при выборе последней точки загрузки максимальное значений из записей. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если при регистрации точки загрузки указывается create, то в БД автоматически создается таблица с указанным именем, где параметр true указывает, что создавать таблицу нужно только, если она отсутствует. Рекомендуется вынести создание таблицы точки загрузки в отдельный инициализационный скрипт, убрав с скрипта регистрации точки загрузки в репозитории. Это позволит избежать лишних DDL запросов к БД и позволит более точно контролировать развертывание решения на новом стенде.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для сохранения точки загрузки используется метод &quot;saveValue&quot;, в котором указывается имя таблицы или обьекта, для которой сохраняется значение точки загрузки:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0">historypoint(</span><span class="de_428DFDB72B"><strong>'dwh:history'</strong></span><span class="de_AF75A8CDA0">) <strong>{</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>&#160; &#160; </strong>saveValue </span><span class="de_428DFDB72B"><strong>'table1'</strong></span><span class="de_AF75A8CDA0">, DateUtils.</span><span class="de_4F999261B4">now</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>}</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">historypoint('dwh:history') {</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; saveValue 'table1', DateUtils.now</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для чтения точки загрузки используется метод &quot;lastValue&quot;, в котором указывается имя таблицы или объекта, для которого считывается значение последней точки загрузки:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0">historypoint(</span><span class="de_428DFDB72B"><strong>'dwh:history'</strong></span><span class="de_AF75A8CDA0">) <strong>{</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>&#160; &#160; </strong>println lastValue(</span><span class="de_428DFDB72B"><strong>'table1'</strong></span><span class="de_AF75A8CDA0">)</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>}</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">historypoint('dwh:history') {</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; println lastValue('table1')</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для очистки точки загрузки по конкретной таблице/объекту используйте метод &quot;clearValue&quot;:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0">historypoint(</span><span class="de_428DFDB72B"><strong>'dwh:history'</strong></span><span class="de_AF75A8CDA0">) <strong>{</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>&#160; &#160; </strong>clearValue </span><span class="de_428DFDB72B"><strong>'table1'</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>}</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">historypoint('dwh:history') {</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; clearValue 'table1'</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для очистки точек загрузок всех таблиц используйте метод &quot;truncate&quot;:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0">historypoint(</span><span class="de_428DFDB72B"><strong>'dwh:history'</strong></span><span class="de_AF75A8CDA0">) <strong>{</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>&#160; &#160; </strong>truncate()</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF75A8CDA0"><strong>}</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">historypoint('dwh:history') {</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; truncate()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Удаление таблицы, в которой хранятся точки загрузки возможно сделать с помощью метода &quot;drop&quot;, параметр которого позволяет удалить только существующую таблицу.</div>
 </div>                                    			

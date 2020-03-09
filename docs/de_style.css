@@ -57,7 +57,7 @@ padding:0;
 span.code
 {
 font-family:"Courier New";
-font-size: 11pt;color:#000000;
+font-size: 10pt;color:#0012ff;
 font-style:normal;
 text-decoration:none;
 font-weight:normal;
@@ -88,27 +88,10 @@ span.de_0FAACB816B
 	font-size: 12pt;
 	color:#008000;
 }
-span.de_21F8DE2DFB
-{
-	font-size: 11pt;
-	font-style:italic;
-}
 span.de_2B94C39861
 {
 	color:#0000ff;
 	text-decoration:underline;
-}
-span.de_428DFDB72B
-{
-	font-family: "Consolas";
-	font-size: 10pt;
-	color:#008000;
-}
-span.de_480A4D64CB
-{
-	font-family: "Consolas";
-	font-size: 10pt;
-	color:#660e7a;
 }
 span.de_4A06449470
 {
@@ -122,22 +105,9 @@ span.de_4AF4BF9DD6
 	font-size: 11pt;
 	color:#000000;
 }
-span.de_4F999261B4
-{
-	font-family: "Consolas";
-	font-size: 10pt;
-	color:#000000;
-	font-style:italic;
-}
 span.de_51752156DC
 {
 	color:#000000;
-}
-span.de_5643B60653
-{
-	font-family: "Consolas";
-	font-size: 10pt;
-	color:#000043;
 }
 span.de_585404FB85
 {
@@ -182,11 +152,6 @@ span.de_D871B0E4A4
 	color:#000000;
 	font-style:italic;
 }
-span.de_DBF328B893
-{
-	color:#000000;
-	font-style:italic;
-}
 span.de_DDAD87FDF7
 {
 	font-family: "Consolas";
@@ -198,12 +163,6 @@ span.de_E1DD958ADB
 	font-family: "Arial";
 	font-size: 11pt;
 	color:#0012ff;
-}
-span.de_E4545DBC7E
-{
-	font-family: "Consolas";
-	font-size: 11pt;
-	color:#000043;
 }
 span.de_F9F9732565
 {
