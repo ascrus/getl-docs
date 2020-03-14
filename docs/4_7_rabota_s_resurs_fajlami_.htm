@@ -252,9 +252,8 @@
                 <td id="headerSide__buttons" class="b-article__headerSide m-article__headerSide__buttons">
                     <div class="b-controlButtons">
                         <ul class="b-controlButtons__items">
-                            <li class="b-controlButtons__item m-controlButtons__item__prev"><a href="4_6_3_klass_eventsrun.htm" class="b-controlButtons__link" title="&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_icon"></span><span class="b-controlButtons__link_text">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>
-                            <li class="b-controlButtons__item m-controlButtons__item__next"><a href="4_7_1_skript_db.htm" class="b-controlButtons__link" title="&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_text">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class="b-controlButtons__link_icon"></span></a></li>
-                                                </ul>
+                            <li class="b-controlButtons__item m-controlButtons__item__prev"><a href="4_6_mnogopotochnaya_obrabotka_fajlov.htm" class="b-controlButtons__link" title="&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_icon"></span><span class="b-controlButtons__link_text">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>
+                                                                        </ul>
                     </div>
                 </td>
             </tr>
@@ -282,7 +281,7 @@
                             .addClass("b-article__headerSide m-article__headerSide__buttons")
                             .append(
                                 $("<div></div>").addClass("b-controlButtons")
-                                .html($("<ul></ul>").addClass("b-controlButtons__items").html("    <li class=\"b-controlButtons__item m-controlButtons__item__prev\"><a href=\"4_6_3_klass_eventsrun.htm\" class=\"b-controlButtons__link\" title=\"&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_icon\"></span><span class=\"b-controlButtons__link_text\">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>\n    <li class=\"b-controlButtons__item m-controlButtons__item__next\"><a href=\"4_7_1_skript_db.htm\" class=\"b-controlButtons__link\" title=\"&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_text\">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class=\"b-controlButtons__link_icon\"></span></a></li>\n"))
+                                .html($("<ul></ul>").addClass("b-controlButtons__items").html("    <li class=\"b-controlButtons__item m-controlButtons__item__prev\"><a href=\"4_6_mnogopotochnaya_obrabotka_fajlov.htm\" class=\"b-controlButtons__link\" title=\"&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_icon\"></span><span class=\"b-controlButtons__link_text\">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>\n"))
                             )
                         )
                     )
@@ -333,43 +332,12 @@
     </noscript>
                 <div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>4.7 Работа с ресурс-файлами </strong></h1></div></div>
 <div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Скрипт <a class="local_link" href="4_7_1_skript_db.htm"><span class="de_2B94C39861">getl.examples.repository.Db</span></a> загружает логины для базы данных из конфигурации, которая находится в файле ресурсов <a class="local_link" href="4_7_2_fajl_konfiguratsii_db_logins.htm"><span class="de_2B94C39861">logins.db.conf</span></a>. Для подключений, &quot;loginsConfigStore&quot; указывает раздел конфигурации, в котором хранятся логины. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Скрипт <a href="https://github.com/ascrus/getl-examples/blob/master/src/main/groovy/getl/examples/repository/Db.groovy"><span class="de_2B94C39861">getl.examples.repository.Db</span></a> загружает логины для базы данных из конфигурации, которая находится в файле ресурсов <a href="https://github.com/ascrus/getl-examples/blob/master/src/main/resources/logins.db.conf"><span class="de_2B94C39861">logins.db.conf</span></a>. Для подключений, &quot;loginsConfigStore&quot; указывает раздел конфигурации, в котором хранятся логины. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Процессы при работе с таким соединением могут просто установить желаемый логин с помощью &quot;useLogin&quot;.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для создания схемы, пользователей в базе и установки прав, скрипт <a class="local_link" href="4_7_3_skript_createdbobjects.htm"><span class="de_2B94C39861">getl.examples.init.CreateDBObjects</span></a> использует скрипт sql из файла ресурсов<a class="local_link" href="4_7_4_skript_create_db_objects_sql.htm"><span class="de_2B94C39861">create_db_objects.sql</span></a>. Этот пример демонстрирует работу с процедурным расширением Getl для sql.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для создания схемы, пользователей в базе и установки прав, скрипт <a href="https://github.com/ascrus/getl-examples/blob/master/src/main/groovy/getl/examples/init/CreateDBObjects.groovy"><span class="de_2B94C39861">getl.examples.init.CreateDBObjects</span></a> использует скрипт sql из файла ресурсов<a href="https://github.com/ascrus/getl-examples/blob/master/src/main/resources/create_db_objects.sql"><span class="de_2B94C39861">create_db_objects.sql</span></a>. Этот пример демонстрирует работу с процедурным расширением Getl для sql.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-</div>                	<div class="menu_on_page">
-		<h2>&#x0421;&#x043E;&#x0434;&#x0435;&#x0440;&#x0436;&#x0430;&#x043D;&#x0438;&#x0435; 4.7 &#x0420;&#x0430;&#x0431;&#x043E;&#x0442;&#x0430; &#x0441; &#x0440;&#x0435;&#x0441;&#x0443;&#x0440;&#x0441;-&#x0444;&#x0430;&#x0439;&#x043B;&#x0430;&#x043C;&#x0438; </h2>
-		<div class="m-workZone_seeAlso_itemContent">
-	<span class="b-tree__spacer">
-		<span class="b-tree__i_article">
-			<span class="b-tree__i_article_inner"></span>
-		</span>
-	</span>
-	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="4_7_1_skript_db.htm">4.7.1 &#x0441;&#x043A;&#x0440;&#x0438;&#x043F;&#x0442; Db</a></span>
-</div><div class="m-workZone_seeAlso_itemContent">
-	<span class="b-tree__spacer">
-		<span class="b-tree__i_article">
-			<span class="b-tree__i_article_inner"></span>
-		</span>
-	</span>
-	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="4_7_2_fajl_konfiguratsii_db_logins.htm">4.7.2 &#x0444;&#x0430;&#x0439;&#x043B; &#x043A;&#x043E;&#x043D;&#x0444;&#x0438;&#x0433;&#x0443;&#x0440;&#x0430;&#x0446;&#x0438;&#x0438; db_logins</a></span>
-</div><div class="m-workZone_seeAlso_itemContent">
-	<span class="b-tree__spacer">
-		<span class="b-tree__i_article">
-			<span class="b-tree__i_article_inner"></span>
-		</span>
-	</span>
-	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="4_7_3_skript_createdbobjects.htm">4.7.3 &#x0441;&#x043A;&#x0440;&#x0438;&#x043F;&#x0442; CreateDBObjects</a></span>
-</div><div class="m-workZone_seeAlso_itemContent">
-	<span class="b-tree__spacer">
-		<span class="b-tree__i_article">
-			<span class="b-tree__i_article_inner"></span>
-		</span>
-	</span>
-	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="4_7_4_skript_create_db_objects_sql.htm">4.7.4 &#x0441;&#x043A;&#x0440;&#x0438;&#x043F;&#x0442; create_db_objects.sql</a></span>
-</div>	</div>
-                    			
+</div>                                    			
                 			                <h6 class="b-article__generatorCopyright">
                     <a class="b-link b-article__generatorCopyrightLink" href="http://www.drexplain.ru" rel="nofollow">&#x0421;&#x043F;&#x0440;&#x0430;&#x0432;&#x043E;&#x0447;&#x043D;&#x0430;&#x044F; &#x0441;&#x0438;&#x0441;&#x0442;&#x0435;&#x043C;&#x0430; &#x0441;&#x043E;&#x0437;&#x0434;&#x0430;&#x043D;&#x0430; &#x0432; Dr.Explain</a>
                 </h6>

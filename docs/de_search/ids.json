@@ -48,19 +48,7 @@
 	"47": ["4.2 Инициализация для работающих примеров", "4_2_initsializatsiya_dlya_rabotayushchikh_primerov.htm"],
 	"48": ["4.3 Демо Репозиторий", "4_3_demo_repozitorij.htm"],
 	"49": ["4.4 Генерация и заполнение таблиц базы данных", "4_4_generatsiya_i_zapolnenie_tablits_bazy_dannykh.htm"],
-	"50": ["4.4.1 скрипт CreateDBObjects", "4_4_1_skript_createdbobjects.htm"],
-	"51": ["4.4.2 скрипт GenerateDate", "4_4_2_skript_generatedate.htm"],
-	"52": ["4.4.3 источник customers.xml", "4_4_3_istochnik_customers_xml.htm"],
-	"53": ["4.5 Пример генерации данных о продажах ", "4_5_primer_generatsii_dannykh_o_prodazhakh_.htm"],
-	"54": ["4.5.1 скрипт Sales", "4_5_1_skript_sales.htm"],
-	"55": ["4.5.2 класс SalesRun", "4_5_2_klass_salesrun.htm"],
-	"56": ["4.6 Многопоточная обработка файлов", "4_6_mnogopotochnaya_obrabotka_fajlov.htm"],
-	"57": ["4.6.1 скрипт GenerateFiles", "4_6_1_skript_generatefiles.htm"],
-	"58": ["4.6.2 скрипт ProcessingFiles", "4_6_2_skript_processingfiles.htm"],
-	"59": ["4.6.3 класс EventsRun", "4_6_3_klass_eventsrun.htm"],
-	"60": ["4.7 Работа с ресурс-файлами ", "4_7_rabota_s_resurs_fajlami_.htm"],
-	"61": ["4.7.1 скрипт Db", "4_7_1_skript_db.htm"],
-	"62": ["4.7.2 файл конфигурации db_logins", "4_7_2_fajl_konfiguratsii_db_logins.htm"],
-	"63": ["4.7.3 скрипт CreateDBObjects", "4_7_3_skript_createdbobjects.htm"],
-	"64": ["4.7.4 скрипт create_db_objects.sql", "4_7_4_skript_create_db_objects_sql.htm"]
+	"50": ["4.5 Пример генерации данных о продажах ", "4_5_primer_generatsii_dannykh_o_prodazhakh_.htm"],
+	"51": ["4.6 Многопоточная обработка файлов", "4_6_mnogopotochnaya_obrabotka_fajlov.htm"],
+	"52": ["4.7 Работа с ресурс-файлами ", "4_7_rabota_s_resurs_fajlami_.htm"]
 }
