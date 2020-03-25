@@ -1,13 +1,10 @@
 [
-	{ "s": "QRYFACT", "p": [29] },
-	{ "s": "QUERY", "p": [29, 32, 28] },
-	{ "s": "QUERYPARAMS", "p": [29, 32] },
-	{ "s": "QUERYPARAMS.FACT_DATE", "p": [29] },
-	{ "s": "QUERYPARAMS.MAX_VALUE", "p": [29] },
-	{ "s": "QUERYPARAMS.MIN_VALUE", "p": [29] },
-	{ "s": "QUOTATION", "p": [35] },
-	{ "s": "QUOTE", "p": [35] },
-	{ "s": "QUOTEMODE", "p": [35] },
-	{ "s": "QUOTENORMAL", "p": [35] },
-	{ "s": "QUOTESTR", "p": [35] }
+	{ "s": "QRY", "p": [18] },
+	{ "s": "QRY.ROWS", "p": [18] },
+	{ "s": "QRYFACT", "p": [14] },
+	{ "s": "QUERY", "p": [18, 14, 12] },
+	{ "s": "QUERYPARAMS", "p": [14] },
+	{ "s": "QUERYPARAMS.FACT_DATE", "p": [14] },
+	{ "s": "QUERYPARAMS.MAX_VALUE", "p": [14] },
+	{ "s": "QUERYPARAMS.MIN_VALUE", "p": [14] }
 ]
