@@ -1,8 +1,11 @@
 [
-	{ "s": "WAITTIME", "p": [18] },
-	{ "s": "WHERE", "p": [15, 14, 11] },
-	{ "s": "WIKI", "p": [25] },
+	{ "s": "WAITTIME", "p": [20] },
+	{ "s": "WHERE", "p": [17, 16, 13] },
+	{ "s": "WIKI", "p": [26] },
+	{ "s": "WINDOWS", "p": [14] },
+	{ "s": "WITH", "p": [14] },
 	{ "s": "WORLD", "p": [5] },
-	{ "s": "WRITEOPTS", "p": [12] },
-	{ "s": "WRITEROW", "p": [10] }
+	{ "s": "WOS", "p": [14] },
+	{ "s": "WRITEOPTS", "p": [14] },
+	{ "s": "WRITEROW", "p": [12] }
 ]

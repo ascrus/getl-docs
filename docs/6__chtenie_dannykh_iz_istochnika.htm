@@ -330,7 +330,7 @@
     <div>To properly display this page you need a browser with JavaScript support.</div>
     </noscript>
                 <div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>6. Чтение данных из источника</strong></h1></div></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">Каждый источник Getl имеет методы eachRow и rows, которые позволяют перебрать записи источника или получить все записи в массив для дальнейшей работы:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Каждый источник Getl имеет методы eachRow и rows, которые позволяют перебрать записи источника или получить все записи в массив для дальнейшей работы:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">postgresqlTable(‘pg:table1’) { </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; tableName = 'table1' </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -351,12 +351,12 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; logInfo rows.find { row -&gt; row.id == 100 }</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">Помимо возможности задать параметры объектов, в Getl часто эти параметры выносятся как отдельные опции объекта, которые действуют все время, пока заданы или не переназначены прямыми параметрами вызываемых методов. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">Например, для таблиц РСУБД в Getl реализованы опции создания, чтения, записи и удаления таблиц. Вместо того, чтобы передать параметры фильтрации и сортировки методу eachRow, они были установлены для опций чтения readOpts и будут действовать на любые операции чтения данных этой таблицы. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Помимо возможности задать параметры объектов, в Getl часто эти параметры выносятся как отдельные опции объекта, которые действуют все время, пока заданы или не переназначены прямыми параметрами вызываемых методов. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Например, для таблиц РСУБД в Getl реализованы опции создания, чтения, записи и удаления таблиц. Вместо того, чтобы передать параметры фильтрации и сортировки методу eachRow, они были установлены для опций чтения readOpts и будут действовать на любые операции чтения данных этой таблицы. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">В зависимости от РСУБД опции могут различаться атрибутами: для многих РСУБД поддерживаются хинты для гененируемых select или запросов записи данных, у Vertica реализована расширенная поддержка опций создания таблиц.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В зависимости от РСУБД опции могут различаться атрибутами: для многих РСУБД поддерживаются хинты для гененируемых select или запросов записи данных, у Vertica реализована расширенная поддержка опций создания таблиц.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">Так же для чтения источников можно использовать специальный процесс rowProcess:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Так же для чтения источников можно использовать специальный процесс rowProcess:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">// Описание существующего CSV файла</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">def filedata = csv {</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; // Соединение с указанием пути нахождения файла</span></div>
@@ -390,7 +390,8 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; logError &quot;Выявлена ошибочная запись: $error_row!&quot;</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; }</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">В отличие от eachRow, процесс rowsProcess может провести анализ источника несмотря на ошибки при его чтении и сохранить их в отдельный набор данных, доступный потом для анализа. В этом наборе помимо самих полей источника так же будет присутствовать поле error, в котором будет сохранен текст ошибки данной записи.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В отличие от eachRow, процесс rowsProcess может провести анализ источника несмотря на ошибки при его чтении и сохранить их в отдельный набор данных, доступный потом для анализа. В этом наборе помимо самих полей источника так же будет присутствовать поле error, в котором будет сохранен текст ошибки данной записи.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </div>                                    			
                 			                <h6 class="b-article__generatorCopyright">

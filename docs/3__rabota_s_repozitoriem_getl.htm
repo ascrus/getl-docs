@@ -250,7 +250,7 @@
                 <td id="headerSide__buttons" class="b-article__headerSide m-article__headerSide__buttons">
                     <div class="b-controlButtons">
                         <ul class="b-controlButtons__items">
-                            <li class="b-controlButtons__item m-controlButtons__item__prev"><a href="2_3_vyzov_skripta_getl.htm" class="b-controlButtons__link" title="&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_icon"></span><span class="b-controlButtons__link_text">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>
+                            <li class="b-controlButtons__item m-controlButtons__item__prev"><a href="2_4_vyzov_skripta_getl.htm" class="b-controlButtons__link" title="&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_icon"></span><span class="b-controlButtons__link_text">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>
                             <li class="b-controlButtons__item m-controlButtons__item__next"><a href="3_1_gruppirovka_obektov_repozitoriya.htm" class="b-controlButtons__link" title="&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_text">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class="b-controlButtons__link_icon"></span></a></li>
                                                 </ul>
                     </div>
@@ -280,7 +280,7 @@
                             .addClass("b-article__headerSide m-article__headerSide__buttons")
                             .append(
                                 $("<div></div>").addClass("b-controlButtons")
-                                .html($("<ul></ul>").addClass("b-controlButtons__items").html("    <li class=\"b-controlButtons__item m-controlButtons__item__prev\"><a href=\"2_3_vyzov_skripta_getl.htm\" class=\"b-controlButtons__link\" title=\"&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_icon\"></span><span class=\"b-controlButtons__link_text\">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>\n    <li class=\"b-controlButtons__item m-controlButtons__item__next\"><a href=\"3_1_gruppirovka_obektov_repozitoriya.htm\" class=\"b-controlButtons__link\" title=\"&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_text\">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class=\"b-controlButtons__link_icon\"></span></a></li>\n"))
+                                .html($("<ul></ul>").addClass("b-controlButtons__items").html("    <li class=\"b-controlButtons__item m-controlButtons__item__prev\"><a href=\"2_4_vyzov_skripta_getl.htm\" class=\"b-controlButtons__link\" title=\"&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_icon\"></span><span class=\"b-controlButtons__link_text\">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>\n    <li class=\"b-controlButtons__item m-controlButtons__item__next\"><a href=\"3_1_gruppirovka_obektov_repozitoriya.htm\" class=\"b-controlButtons__link\" title=\"&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_text\">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class=\"b-controlButtons__link_icon\"></span></a></li>\n"))
                             )
                         )
                     )
@@ -330,8 +330,23 @@
     <div>To properly display this page you need a browser with JavaScript support.</div>
     </noscript>
                 <div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>3. Работа с репозиторием Getl</strong></h1></div></div>
-<div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">Для работы с объектами в Getl, желательно их зарегистрировать в репозитории:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для удобства работы с большим числом соединений, таблиц, файловых источников, менеджеров инкрементальных точек и последовательностей РСУБД в Getl реализован репозиторий объектов, который позволяет:</div>
+<ul class="de_list"><li class="list-element list-counter-3" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-3;">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Зарегистрировать по указанному имени объект в репозитории;</div>
+</li><li class="list-element list-counter-3" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Гарантировать, что с указанным именем будет зарегистрирован только один объект;</div>
+</li><li class="list-element list-counter-3" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Дать возможность группировать объекты по имени группы;</div>
+</li><li class="list-element list-counter-3" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Получить доступ к объекту из любого места кода и любом уровне вложенности вызываемых скриптов;</div>
+</li><li class="list-element list-counter-3" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Получить и массово обработать список объектов по заданной маске или группе;</div>
+</li><li class="list-element list-counter-3" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Обеспечить потокозащищенный доступ к объектам при многопоточной работе с ними;</div>
+</li><li class="list-element list-counter-3" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Убрать зарегистрированный объект из репозитория.</div>
+</li></ul><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Пример регистрации объектов в репозитории:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">oracleConnection(‘ora:con’, true) {</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; connectURL = 'jdbc:oracle:thin:@localhost:1521:demo'</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; login = 'user'</span></div>
@@ -348,15 +363,18 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; create ifNotExists: true</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">При работе с объектами в Getl используется возможность Groovy управлять видимостью блока замыкания фигурных скобок (Closure) под нужный объект. В коде выше объявляются соединение Oracle и таблица для этого соединения, задается имя, под которым эти объекты будут зарегистрированы в репозитории Getl с флагом требования регистрации. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">В коде устанавливаются свойства самого объекта и вызываются его функции.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">После регистрации в репозитории, объект становится доступным в любом из скриптов Getl до окончания работы программы или если он не будет явно удален из репозитория командой unregister. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">В коде описания Oracle таблицы видно, что для доступа к ее данным будет использовано соединение, которое было создано ранее под именем «ora:con».</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Пояснения:</span></div>
+<ul class="de_list"><li class="list-element list-counter-4" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-4;">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>При работе с объектами в Getl используется возможность Groovy управлять видимостью блока замыкания фигурных скобок (Closure) под нужный объект. В коде выше объявляются соединение Oracle и таблица для этого соединения, задается имя, под которым эти объекты будут зарегистрированы в репозитории Getl с флагом требования регистрации. В коде замыкания для объекта устанавливаются свойства самого объекта и вызываются его функции;</div>
+</li><li class="list-element list-counter-4" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>После регистрации в репозитории, объект становится доступным в любом из скриптов Getl до окончания работы программы или если он не будет явно удален из репозитория командой unregister. </div>
+</li><li class="list-element list-counter-4" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>В коде описания Oracle таблицы видно, что для доступа к ее данным будет использовано соединение, которое было создано ранее под именем «ora:con».</div>
+</li></ul><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_8875473D98">Внимание</span>: в репозитории нельзя дважды зарегистрировать объект с одинаковыми именем. Это гарантирует защиту от ошибок в логике кода, где разные скрипты попытаются под одним именем зарегистрировать для работы разные объекты.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">В репозитории нельзя дважды зарегистрировать объект с одинаковыми именем. Это гарантирует защиту от ошибок в логике кода, где разные скрипты попытаются под одним именем зарегистрировать для работы разные объекты.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">Объекты Getl могут иметь вложенные объекты, в примере кода выше мы видим объявление полей таблицы, где для заданного имени поля далее в блоке замыкания указываются атрибуты этого поля.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CD179DA38">Вызов метода create с параметром приведет к созданию таблицы в Oracle с заданной структурой и Primary Key, если эта таблица отсутствует в базе данных.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">P.S. Объекты Getl могут иметь вложенные объекты, в примере кода выше мы видим объявление полей таблицы, где для заданного имени поля далее в блоке замыкания указываются атрибуты этого поля.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Вызов метода create с параметром приведет к созданию таблицы в Oracle с заданной структурой и Primary Key, если эта таблица отсутствует в базе данных.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </div>                	<div class="menu_on_page">
 		<h2>&#x0421;&#x043E;&#x0434;&#x0435;&#x0440;&#x0436;&#x0430;&#x043D;&#x0438;&#x0435; 3. &#x0420;&#x0430;&#x0431;&#x043E;&#x0442;&#x0430; &#x0441; &#x0440;&#x0435;&#x043F;&#x043E;&#x0437;&#x0438;&#x0442;&#x043E;&#x0440;&#x0438;&#x0435;&#x043C; Getl</h2>
@@ -367,6 +385,13 @@
 		</span>
 	</span>
 	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="3_1_gruppirovka_obektov_repozitoriya.htm">3.1 &#x0413;&#x0440;&#x0443;&#x043F;&#x043F;&#x0438;&#x0440;&#x043E;&#x0432;&#x043A;&#x0430; &#x043E;&#x0431;&#x044A;&#x0435;&#x043A;&#x0442;&#x043E;&#x0432; &#x0440;&#x0435;&#x043F;&#x043E;&#x0437;&#x0438;&#x0442;&#x043E;&#x0440;&#x0438;&#x044F;</a></span>
+</div><div class="m-workZone_seeAlso_itemContent">
+	<span class="b-tree__spacer">
+		<span class="b-tree__i_article">
+			<span class="b-tree__i_article_inner"></span>
+		</span>
+	</span>
+	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="3_2_svyazyvanie_istochnikov_v_potokakh.htm">3.2 &#x0421;&#x0432;&#x044F;&#x0437;&#x044B;&#x0432;&#x0430;&#x043D;&#x0438;&#x0435; &#x0438;&#x0441;&#x0442;&#x043E;&#x0447;&#x043D;&#x0438;&#x043A;&#x043E;&#x0432; &#x0432; &#x043F;&#x043E;&#x0442;&#x043E;&#x043A;&#x0430;&#x0445;</a></span>
 </div>	</div>
                     			
                 			                <h6 class="b-article__generatorCopyright">
