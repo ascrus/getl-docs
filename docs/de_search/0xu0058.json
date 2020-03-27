@@ -1,9 +1,10 @@
 [
-	{ "s": "XERO", "p": [14, 4] },
+	{ "s": "XERO", "p": [11, 4] },
 	{ "s": "XEROAPI", "p": [4] },
-	{ "s": "XEROCONNECTION", "p": [14] },
-	{ "s": "XLSX", "p": [11] },
-	{ "s": "XML", "p": [14, 2] },
-	{ "s": "XML(‘XML:FILE1", "p": [14] },
-	{ "s": "XMLCONNECTION", "p": [14] }
+	{ "s": "XEROCONNECTION", "p": [11] },
+	{ "s": "XLSX", "p": [16] },
+	{ "s": "XML", "p": [11, 33, 32, 2] },
+	{ "s": "XML(‘XML:FILE1", "p": [11] },
+	{ "s": "XML-ФАЙЛА", "p": [33] },
+	{ "s": "XMLCONNECTION", "p": [11] }
 ]

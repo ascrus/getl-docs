@@ -1,10 +1,10 @@
 [
-	{ "s": "QRY", "p": [20] },
-	{ "s": "QRY.ROWS", "p": [20] },
-	{ "s": "QRYFACT", "p": [16] },
-	{ "s": "QUERY", "p": [20, 16, 14] },
-	{ "s": "QUERYPARAMS", "p": [16] },
-	{ "s": "QUERYPARAMS.FACT_DATE", "p": [16] },
-	{ "s": "QUERYPARAMS.MAX_VALUE", "p": [16] },
-	{ "s": "QUERYPARAMS.MIN_VALUE", "p": [16] }
+	{ "s": "QRY", "p": [26] },
+	{ "s": "QRY.ROWS", "p": [26] },
+	{ "s": "QRYFACT", "p": [13] },
+	{ "s": "QUERY", "p": [26, 13, 11] },
+	{ "s": "QUERYPARAMS", "p": [13] },
+	{ "s": "QUERYPARAMS.FACT_DATE", "p": [13] },
+	{ "s": "QUERYPARAMS.MAX_VALUE", "p": [13] },
+	{ "s": "QUERYPARAMS.MIN_VALUE", "p": [13] }
 ]
