@@ -1,5 +1,6 @@
 [
 	{ "s": "YAML", "p": [11] },
+	{ "s": "YAMLCONNECTION", "p": [11] },
 	{ "s": "YANDEX", "p": [2] },
 	{ "s": "YEAR", "p": [16] },
 	{ "s": "YYYY", "p": [11, 16] },

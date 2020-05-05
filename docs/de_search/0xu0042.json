@@ -1,5 +1,5 @@
 [
-	{ "s": "BASESCRIPT", "p": [5] },
+	{ "s": "BASESCRIPT", "p": [5, 29, 7] },
 	{ "s": "BEFORECLASS", "p": [28] },
 	{ "s": "BETWEEB", "p": [18] },
 	{ "s": "BETWEEN", "p": [13] },

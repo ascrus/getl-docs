@@ -354,9 +354,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">copyRows(exceldata, oracleTable(‘ora:table1’))</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Пояснения:</span></div>
-<ul class="de_list"><li class="list-element list-counter-29" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-29;">
+<ul class="de_list"><li class="list-element list-counter-30" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-30;">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>В этом коде описывается источник данных, который хранится в Excel файле на указанном листе. </div>
-</li><li class="list-element list-counter-29" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+</li><li class="list-element list-counter-30" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Данные из листа Excel вставляются в таблицу Oracle, где Getl автоматически связывает по именам поля и приводя их типы при записи.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">P.S. Обратите внимание, в этом примере источник excel и его соединение не были зарегистрированы в репозитории. Вместо этого набор данных Excep был создан как локальная переменная Groovy. Это вполне рабочий вариант для использования объекта в пределах одного скрипта, когда не требуется его видимость из других скриптов или же внутри многопоточного кода.</div>
@@ -395,9 +395,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Пояснение:</span></div>
-<ul class="de_list"><li class="list-element list-counter-30" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-30;">
+<ul class="de_list"><li class="list-element list-counter-31" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-31;">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>В этом примере Getl выгрузит все данные из таблицы Oracle во временный CSV файл, соответствующий структуре таблицы Vertica, дописав значения полей id, year и через команду COPY загрузит этот файл в таблицу Vertica, вызвав очистку перед её загрузкой;</div>
-</li><li class="list-element list-counter-30" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+</li><li class="list-element list-counter-31" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>В copyRow задается свой код для трансформации данных из источника в приемник. Передаются 2 параметра: поля исходной и конечной обрабатываемой записи. Если у copyRows включена (по умолчанию) опция autoMaps, то Getl автоматически связывает поля таблиц по именам и заполняет найденные по именам поля значениями из источника, приводя их к типу приемника.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </li></ul></div>                                    			

@@ -253,7 +253,7 @@
                     <div class="b-controlButtons">
                         <ul class="b-controlButtons__items">
                             <li class="b-controlButtons__item m-controlButtons__item__prev"><a href="razrabotka_povtorno_ispolzuemykh_shablonov.htm" class="b-controlButtons__link" title="&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_icon"></span><span class="b-controlButtons__link_text">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>
-                            <li class="b-controlButtons__item m-controlButtons__item__next"><a href="repozitorij_primerov_getl_examples.htm" class="b-controlButtons__link" title="&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_text">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class="b-controlButtons__link_icon"></span></a></li>
+                            <li class="b-controlButtons__item m-controlButtons__item__next"><a href="sozdanie_bazovykh_klassov_proekta.htm" class="b-controlButtons__link" title="&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;"><span class="b-controlButtons__link_text">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class="b-controlButtons__link_icon"></span></a></li>
                                                 </ul>
                     </div>
                 </td>
@@ -282,7 +282,7 @@
                             .addClass("b-article__headerSide m-article__headerSide__buttons")
                             .append(
                                 $("<div></div>").addClass("b-controlButtons")
-                                .html($("<ul></ul>").addClass("b-controlButtons__items").html("    <li class=\"b-controlButtons__item m-controlButtons__item__prev\"><a href=\"razrabotka_povtorno_ispolzuemykh_shablonov.htm\" class=\"b-controlButtons__link\" title=\"&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_icon\"></span><span class=\"b-controlButtons__link_text\">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>\n    <li class=\"b-controlButtons__item m-controlButtons__item__next\"><a href=\"repozitorij_primerov_getl_examples.htm\" class=\"b-controlButtons__link\" title=\"&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_text\">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class=\"b-controlButtons__link_icon\"></span></a></li>\n"))
+                                .html($("<ul></ul>").addClass("b-controlButtons__items").html("    <li class=\"b-controlButtons__item m-controlButtons__item__prev\"><a href=\"razrabotka_povtorno_ispolzuemykh_shablonov.htm\" class=\"b-controlButtons__link\" title=\"&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_icon\"></span><span class=\"b-controlButtons__link_text\">&#xa0;&#x041F;&#x0440;&#x0435;&#x0434;&#x044B;&#x0434;&#x0443;&#x0449;&#x0430;&#x044F;</span></a></li>\n    <li class=\"b-controlButtons__item m-controlButtons__item__next\"><a href=\"sozdanie_bazovykh_klassov_proekta.htm\" class=\"b-controlButtons__link\" title=\"&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;\"><span class=\"b-controlButtons__link_text\">&#x0421;&#x043B;&#x0435;&#x0434;&#x0443;&#x044E;&#x0449;&#x0430;&#x044F;&#xa0;</span><span class=\"b-controlButtons__link_icon\"></span></a></li>\n"))
                             )
                         )
                     )
@@ -339,11 +339,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">package test</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">import org.junit.*</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">import org.junit.runner.RunWith</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">import org.jnit.runners.JUnit4</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">import getl.test.GetlDslTest</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">@RunWith(Junit4.class)</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">class TestMyScripts extends GroovyTestCase {</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">class TestMyScripts extends GetlDslTest {</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; @BeforeClass</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; static void initTests() {</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; Getl.Dsl {</span></div>
@@ -379,11 +377,11 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Пояснения:</span></div>
-<ul class="de_list"><li class="list-element list-counter-39" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-39;">
+<ul class="de_list"><li class="list-element list-counter-40" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-40;">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>По умолчанию скрипт Getl хранит репозиторий как статический экземпляр класса, поэтому можно обращаться к нему через статический метод Dsl класса Getl;</div>
-</li><li class="list-element list-counter-39" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+</li><li class="list-element list-counter-40" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>В данном примере при инициализации класса для тестирования подгружаются конфигурационные файлы и производится проверка соединения к серверам;</div>
-</li><li class="list-element list-counter-39" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+</li><li class="list-element list-counter-40" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Указания this для Dsl указывает Getl, что он работает внутри указанного объекта класса и позволяет получить доступ к полю класса “complete” из скрипта через переменную this. Иначе Groovy сгенерирует ошибку с сообщением, что такая переменная не обнаружена.</div>
 </li></ul><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В тех случаях, когда требуется использовать функционал тестирования внутри скриптов Getl, поддерживается оператор testCase, который добавляет в блок функциональность GroovyTestCase:</div>

@@ -394,9 +394,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">}</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Пояснения:</span></div>
-<ul class="de_list"><li class="list-element list-counter-33" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-33;">
+<ul class="de_list"><li class="list-element list-counter-34" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-34;">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>В данном примере процесс соберет список всех файлов, сгруппирует их по датам, каждую группу файлов обработает в 8 конкурентных потоков, вызвав указанный код. </div>
-</li><li class="list-element list-counter-33" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
+</li><li class="list-element list-counter-34" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>После завершения обработки файлов каждой группы будет вызван код сохранения кэшированных данных. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">P.S. Чтобы не кэшировать данные, можно напрямую через copyRows с включенным bulkLoad загружать данные с Json в таблицу Vertica, без указания кода для сохранения промежуточных данных. Однако это излишне нагрузило хранилище данных лишними запросами с загрузкой пакетов данных небольшого размера. В таком случае кэширование во временный файл является более эффективным способом при загрузке в БД тысяч небольших файлов.</div>

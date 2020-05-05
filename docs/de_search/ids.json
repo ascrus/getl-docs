@@ -27,12 +27,14 @@
 	"26": ["8.1. Многопоточная обработка данных", "mnogopotochnaya_obrabotka_dannykh.htm"],
 	"27": ["8.2. Разработка повторно используемых шаблонов", "razrabotka_povtorno_ispolzuemykh_shablonov.htm"],
 	"28": ["8.3. Разработка юнит тестов", "razrabotka_yunit_testov.htm"],
-	"29": ["9. Репозиторий примеров Getl Examples", "repozitorij_primerov_getl_examples.htm"],
-	"30": ["9.1. Установка Getl Examples", "ustanovka_getl_examples.htm"],
-	"31": ["9.2. Инициализация для работающих примеров", "initsializatsiya_dlya_rabotayushchikh_primerov.htm"],
-	"32": ["9.3. Репозиторий источников данных примеров", "repozitorij_istochnikov_dannykh_primerov.htm"],
-	"33": ["9.4. Генерация и заполнение таблиц базы данных", "generatsiya_i_zapolnenie_tablits_bazy_dannykh.htm"],
-	"34": ["9.5. Пример генерации данных о продажах ", "primer_generatsii_dannykh_o_prodazhakh_.htm"],
-	"35": ["9.6. Многопоточная обработка файлов", "mnogopotochnaya_obrabotka_fajlov.htm"],
-	"36": ["9.7. Работа с ресурсными файлами ", "rabota_s_resursnymi_fajlami_.htm"]
+	"29": ["8.4. Создание базовых классов проекта", "sozdanie_bazovykh_klassov_proekta.htm"],
+	"30": ["9. Репозиторий примеров Getl Examples", "repozitorij_primerov_getl_examples.htm"],
+	"31": ["9.1. Установка Getl Examples", "ustanovka_getl_examples.htm"],
+	"32": ["9.2. Инициализация проекта для запуска примеров", "initsializatsiya_proekta_dlya_zapuska_primerov.htm"],
+	"33": ["9.3. Пакет getl.examples.data", "paket_getl_examples_data.htm"],
+	"34": ["9.4. Пакет getl.example.files", "paket_getl_example_files.htm"],
+	"35": ["9.5. Пакет getl.examples.process.init", "paket_getl_examples_process_init.htm"],
+	"36": ["9.6. Пакет getl.examples.process.sales", "paket_getl_examples_process_sales.htm"],
+	"37": ["9.7. Пакет getl.examples.process.events", "paket_getl_examples_process_events.htm"],
+	"38": ["9.8. Модуль проекта test", "modul_proekta_test.htm"]
 }

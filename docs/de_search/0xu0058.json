@@ -3,8 +3,7 @@
 	{ "s": "XEROAPI", "p": [4] },
 	{ "s": "XEROCONNECTION", "p": [11] },
 	{ "s": "XLSX", "p": [16] },
-	{ "s": "XML", "p": [11, 33, 32, 2] },
+	{ "s": "XML", "p": [11, 35, 33, 2] },
 	{ "s": "XML(‘XML:FILE1", "p": [11] },
-	{ "s": "XML-ФАЙЛА", "p": [33] },
 	{ "s": "XMLCONNECTION", "p": [11] }
 ]

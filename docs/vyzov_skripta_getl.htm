@@ -347,8 +347,8 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_8875473D98">Внимание</span>: при запуске скриптов Getl с помощью командной строуки Groovy теряется возможность работы с ресурсными файлами проекта и усложняется вызов других скриптов проекта. Рекомендуется этот способ использовать для разовых задач, когда нужно быстро что-то написать и запустить в виде одного скрипта.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Внутри кода Getl вызов другого скрипта осуществляется так:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">runGroovyClass demo.MyScript, [ true/false, ] [ { name = ‘user’ } ]</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">runGroovyClass demo.MyScript, [ true/false, ] [ [name: 'user' ] ]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">callScript demo.MyScript, [ true/false, ] [ { name = ‘user’ } ]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">callScript demo.MyScript, [ true/false, ] [ [name: 'user' ] ]</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Пояснения:</div>
 <ul class="de_list"><li class="list-element list-counter-2" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; counter-reset: list-counter-2;">
@@ -357,7 +357,15 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Второй необязательный параметр указывает, следует ли вызывать скрипт только один раз, если передать true. Это позволяет контролировать вызов скриптов, которые создают объекты в репозитории из разных скриптов и гарантировать, что не произойдет попытка более одного раза зарегистрировать одинаковые объекты в репозитории. По умолчанию параметр имеет значение false.</div>
 </li><li class="list-element list-counter-2" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; direction: ltr; ">
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:11pt;font-family:&quot;Arial&quot;; display: inline-block; direction: ltr;"></div>Третий необязательный параметр позволяет задать параметры вызываемому скрипту, определенные в @Field. Передавать параметры можно в виде кода языка конфигурации Groovy Slurper или структуры Map.</div>
-</li></ul></div>                                    			
+</li></ul><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Часто при запуске скрипта требуется вызвать другие скрипты, если они еще не были ранее вызваны, например для регистрации в репозитории объектов, которые используются в скрипте. Для этой цели удобно использовать оператор callScripts:</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">@BaseScript Getl main</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">// Вызвать скрипты проекта регистрации в репозитории соединений, таблиц и файловых систем, если они еще не были вызваны</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">callScripts Connections, Tables, Files</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">/* ... работа с объявленными объектами ... */</span></div>
+</div>                                    			
                 			                <h6 class="b-article__generatorCopyright">
                     <a class="b-link b-article__generatorCopyrightLink" href="http://www.drexplain.ru" rel="nofollow">&#x0421;&#x043F;&#x0440;&#x0430;&#x0432;&#x043E;&#x0447;&#x043D;&#x0430;&#x044F; &#x0441;&#x0438;&#x0441;&#x0442;&#x0435;&#x043C;&#x0430; &#x0441;&#x043E;&#x0437;&#x0434;&#x0430;&#x043D;&#x0430; &#x0432; Dr.Explain</a>
                 </h6>

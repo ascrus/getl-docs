@@ -333,10 +333,10 @@
     </noscript>
                 <div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>Подключение библиотеки из репозитория Maven</strong></h1></div></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для подключения Getl к проекту, достаточно подключить его из центрального Maven репозитория. Пример на Gradle:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">compile(group: 'net.sourceforge.getl', name: 'getl', version:'4.3.2')</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">compile(group: 'net.sourceforge.getl', name: 'getl', version:'4.4.1')</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если при работе с Getl не требуется использовать такие источники, как HDFS, Xero или SalesForce, можно отключить их компиляцию в Gradle с помощью оператора exclude group:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">compile(group: 'net.sourceforge.getl', name: 'getl', version:'4.3.2') {</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">compile(group: 'net.sourceforge.getl', name: 'getl', version:'4.4.1') {</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; exclude group: &quot;com.github.xeroapi&quot;</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; exclude group: &quot;org.apache.hadoop&quot;</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="code">&#160; &#160; exclude group: &quot;com.force.api&quot;</span></div>
