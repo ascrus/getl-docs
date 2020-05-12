@@ -109,6 +109,12 @@ span.de_8875473D98
 {
 	color:#ff3600;
 }
+span.de_B539E31507
+{
+	font-family: "JetBrains Mono";
+	font-size: 10pt;
+	color:#1750eb;
+}
 span.de_BFA29210B4
 {
 	font-family: "Calibri";
@@ -874,6 +880,240 @@ span.de_EA2676F7B2
 	counter-increment: list-counter-41;
 }
 .list-counter-41 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-42 > div > * {
+	text-indent: 0px;}
+.list-counter-42 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-42, disc) '\00a0';
+	counter-increment: list-counter-42;
+}
+.list-counter-42 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-43 > div > * {
+	text-indent: 0px;}
+.list-counter-43 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-43, disc) '\00a0';
+	counter-increment: list-counter-43;
+}
+.list-counter-43 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-44 > div > * {
+	text-indent: 0px;}
+.list-counter-44 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-44, disc) '\00a0';
+	counter-increment: list-counter-44;
+}
+.list-counter-44 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-45 > div > * {
+	text-indent: 0px;}
+.list-counter-45 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-45, decimal) '.\00a0';
+	counter-increment: list-counter-45;
+}
+.list-counter-45 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-46 > div > * {
+	text-indent: 0px;}
+.list-counter-46 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-46, disc) '\00a0';
+	counter-increment: list-counter-46;
+}
+.list-counter-46 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-47 > div > * {
+	text-indent: 0px;}
+.list-counter-47 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-47, disc) '\00a0';
+	counter-increment: list-counter-47;
+}
+.list-counter-47 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-48 > div > * {
+	text-indent: 0px;}
+.list-counter-48 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-48, disc) '\00a0';
+	counter-increment: list-counter-48;
+}
+.list-counter-48 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-49 > div > * {
+	text-indent: 0px;}
+.list-counter-49 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-49, decimal) '.\00a0';
+	counter-increment: list-counter-49;
+}
+.list-counter-49 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-50 > div > * {
+	text-indent: 0px;}
+.list-counter-50 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-50, disc) '\00a0';
+	counter-increment: list-counter-50;
+}
+.list-counter-50 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-51 > div > * {
+	text-indent: 0px;}
+.list-counter-51 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-51, disc) '\00a0';
+	counter-increment: list-counter-51;
+}
+.list-counter-51 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-52 > div > * {
+	text-indent: 0px;}
+.list-counter-52 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-52, disc) '\00a0';
+	counter-increment: list-counter-52;
+}
+.list-counter-52 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-53 > div > * {
+	text-indent: 0px;}
+.list-counter-53 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-53, decimal) '.\00a0';
+	counter-increment: list-counter-53;
+}
+.list-counter-53 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-54 > div > * {
+	text-indent: 0px;}
+.list-counter-54 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-54, disc) '\00a0';
+	counter-increment: list-counter-54;
+}
+.list-counter-54 > div > div[class='list-marker-chm'] {
 	display: inline-block;
 	text-align: left;
 	zoom: 1;

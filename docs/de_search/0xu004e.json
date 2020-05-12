@@ -16,6 +16,7 @@
 	{ "s": "NEXTVAL", "p": [16] },
 	{ "s": "NODES", "p": [11] },
 	{ "s": "NOT", "p": [13] },
+	{ "s": "NOTIFICATIONTIME", "p": [33] },
 	{ "s": "NTZ", "p": [13] },
 	{ "s": "NULL", "p": [18, 29, 22, 13] },
 	{ "s": "NULLASVALUE", "p": [18] },

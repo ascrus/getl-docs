@@ -27,6 +27,8 @@ de_search\0xu0413.json
 de_search\0xu0412.json
 de_search\0xu0411.json
 de_search\0xu0410.json
+de_search\0xu0401.json
+de_search\0xu005f.json
 de_search\0xu0059.json
 de_search\0xu0058.json
 de_search\0xu0057.json
@@ -102,6 +104,11 @@ initsializatsiya_proekta_dlya_zapuska_primerov.htm
 drex_ustanovka_getl_examples_custom.png
 ustanovka_getl_examples.htm
 repozitorij_primerov_getl_examples.htm
+modeli_maptables.htm
+modeli_monitorrules.htm
+modeli_referencefiles.htm
+modeli_referencetables.htm
+rasshirenie_funktsionalnosti_s_pomoshchyu_easyetl.htm
 sozdanie_bazovykh_klassov_proekta.htm
 razrabotka_yunit_testov.htm
 razrabotka_povtorno_ispolzuemykh_shablonov.htm

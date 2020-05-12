@@ -1,11 +1,13 @@
 [
-	{ "s": "BASESCRIPT", "p": [5, 29, 7] },
+	{ "s": "BASESCRIPT", "p": [5, 30, 34, 33, 32, 31, 29, 7] },
+	{ "s": "BD", "p": [32] },
 	{ "s": "BEFORECLASS", "p": [28] },
 	{ "s": "BETWEEB", "p": [18] },
 	{ "s": "BETWEEN", "p": [13] },
 	{ "s": "BI", "p": [22] },
 	{ "s": "BIUSER", "p": [22] },
-	{ "s": "BUILD", "p": [6] },
+	{ "s": "BUILD", "p": [30, 6] },
+	{ "s": "BUILD.GRADLE", "p": [30] },
 	{ "s": "BUILD/LIBS", "p": [6] },
 	{ "s": "BUILDLISTFILES", "p": [19] },
 	{ "s": "BULK", "p": [12] },
@@ -13,5 +15,6 @@
 	{ "s": "BULKLOADCSV", "p": [12, 20] },
 	{ "s": "BULKLOADCSV(CSV", "p": [12] },
 	{ "s": "BULKLOADCSV(CSVTEMP(‘#CACHE", "p": [20] },
-	{ "s": "BULKLOADOPTS", "p": [12, 11] }
+	{ "s": "BULKLOADOPTS", "p": [12, 11] },
+	{ "s": "BY", "p": [33] }
 ]

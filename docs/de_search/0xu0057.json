@@ -1,13 +1,14 @@
 [
 	{ "s": "WAITTIME", "p": [26] },
-	{ "s": "WHERE", "p": [18, 14, 13] },
+	{ "s": "WHERE", "p": [33, 18, 14, 13] },
+	{ "s": "WHERECOPY", "p": [31, 30] },
 	{ "s": "WIKI", "p": [2] },
-	{ "s": "WINDOWS", "p": [11] },
+	{ "s": "WINDOWS", "p": [32, 11] },
 	{ "s": "WITH", "p": [11] },
 	{ "s": "WORKPATH", "p": [29] },
 	{ "s": "WORKPATH/LOGS", "p": [29] },
 	{ "s": "WORLD", "p": [5] },
 	{ "s": "WOS", "p": [11] },
 	{ "s": "WRITEOPTS", "p": [11] },
-	{ "s": "WRITEROW", "p": [17, 35] }
+	{ "s": "WRITEROW", "p": [17, 40] }
 ]
